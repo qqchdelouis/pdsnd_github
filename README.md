@@ -1,17 +1,34 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
-### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+# Bike Share Data Project
 
 ### Description
-Describe what your project is about and what it does
+This is an interactive Python 3 project that is run from the command line in a Mac computer. Subject to your selection, this program will provide bike share rental information and statistics for either Chicago, New York City, or Washington.
 
-### Files used
-Include the files used
+### Python Requirements
+This Python program was developed with, and requires, the following Python version and modules:
+- Python 3.7.6
+- numpy 1.21.3
+- os
+- pandas 1.3.4
+- time
+
+### Data Requirements
+This project was designed to run with three `.csv` files, which are included in this repository:
+```
+chicago.csv
+new_york_city.csv
+washington.csv
+```
+
+### Usage
+The program is launched with this command in Termial :
+
+`python3 bikeshare.py`
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project was developed for Udacity's Programming for Data Science with Python Nanodegree Program. Udacity provided the data and the framework of the program.
 
+### License
+This repositiory is licensed under a [Creative Commons Attribution License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you are a Udacity student, you must, under Udacity's honour code, cite this repository in your work if it influences your course submission(s) to Udacity.
+
+### Date created
+14 December 2021
