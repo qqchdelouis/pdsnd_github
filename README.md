@@ -28,7 +28,7 @@ The program is launched with this command in Termial :
 This project was developed for Udacity's Programming for Data Science with Python Nanodegree Program. Udacity provided the data and the framework of the program.
 
 ### License
-This repositiory is licensed under a [Creative Commons Attribution License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you are a Udacity student, you must, under Udacity's honour code, cite this repository in your work if it influences your course submission(s) to Udacity.
+This repositiory is licensed under a [Creative Commons Attribution License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you are a Udacity student, you must, under [Udacity's honour code](https://www.udacity.com/legal/en-us/honor-code), cite this repository in your work if it influences your course submission(s) to Udacity.
 
 ### Date created
 14 December 2021
