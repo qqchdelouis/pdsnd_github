@@ -118,6 +118,8 @@ def hour_stats(x):
     print("The most common start hour is : {} (in U.S. military time).".format(x))
 
 
+
+
 def time_stats(df, month, day, no_filter):
     """Displays statistics on the most frequent times of travel."""
     print("\nCalculating The Most Frequent Times of Travel...\n")
@@ -170,6 +172,14 @@ def station_stats(df):
     print("Start station : {}".format(frequent_combination.max()["Start Station"]))
     print("End station : {}".format(frequent_combination.max()["End Station"]))
     print("This combination of stations had {} trips.".format(frequent_combination.max()[0]))
+    least_combination = df.groupby(["Start Station","End Station"]).size().sort_values(ascending=True).reset_index()
+    print("\nAn example of a station combination with the least trips :")
+    print("Start station : {}".format(least_combination.min()["Start Station"]))
+    print("End station : {}".format(least_combination.min()["End Station"]))
+    if least_combination.min()[0] == 1:
+        print("This combination of stations had {} trip.".format(least_combination.min()[0]))
+    else:
+        print("This combination of stations had {} trips.".format(least_combination.min()[0]))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("-"*40)
 
@@ -195,8 +205,11 @@ def trip_duration_stats(df):
     print("Minutes : {}".format(total_minutes))
     print("Seconds : {}".format(total_seconds))
     # display mean travel time
-    mean_travel_time = df["Trip Duration"].mean()
-    print("The mean travel time (in seconds) is : {}".format(mean_travel_time))
+    pandas_mean_travel_time = df["Trip Duration"].mean()
+    print("\nUsing pandas, the mean travel time (in seconds) is : {}".format(pandas_mean_travel_time))
+    travel_time_array = np.array(df["Trip Duration"])
+    numpy_mean_travel_time = travel_time_array.mean()
+    print("Using numpy, the mean travel time (in seconds) is : {}".format(numpy_mean_travel_time))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("-"*40)
 
